@@ -1,0 +1,25 @@
+<h1> Wallet Dashboard </h1>
+<h2>
+  Your balance is:
+  <%=MonetaryActivity.first.amount %>
+  <%end%>
+</h2>
+<h3>Your total number of transactions is:
+  <%=def self.balance
+    balance = []
+    self.all.each do |x|
+      array << x.amount
+    end
+    balance.reduce(0) {|x,y| x + y}
+      p "Your balance is #{balance}"
+  end%>
+<%end%>
+<h4>
+<%=def negative_balance_warning
+  p "You have been fiscally irresponisble! Rectify this immediately" if self.balance < 0
+end %>
+<%end%>
+</h4>
+
+<a href="http://localhost:3000/monetary_activities">All my transactions</a>
+<a href="http://localhost:3000/monetary_activities/new">Add a new transaction</a>

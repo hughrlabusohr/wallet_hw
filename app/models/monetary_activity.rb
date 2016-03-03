@@ -5,14 +5,19 @@ class MonetaryActivity < ActiveRecord::Base
   end
 
   def self.balance
-    array = []
+    balance = []
     self.all.each do |x|
       array << x.amount
     end
-    array.reduce(0) {|x,y| x + y}
+    balance.reduce(0) {|x,y| x + y}
+  p "Your balance is #{balance}"
   end
 
   def negative_balance_warning
     p "You have been fiscally irresponisble! Rectify this immediately" if self.balance < 0
+  end
+
+  def
+
   end
 end
