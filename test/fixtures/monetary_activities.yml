@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spent_on: 2016-03-02
+  name: MyString
+  amount: 10.00
+
+two:
+  spent_on: 2016-03-02
+  name: MyString
+  amount: 20.00
+
+three:
+  spent_on: 2016-03-02
+  name: MyString
+  amount: 10.00

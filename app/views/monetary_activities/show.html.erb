@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Spent on:</strong>
+  <%= @monetary_activity.spent_on %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @monetary_activity.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @monetary_activity.amount %>
+</p>
+
+<%= link_to 'Edit', edit_monetary_activity_path(@monetary_activity) %> |
+<%= link_to 'Back', monetary_activities_path %>
